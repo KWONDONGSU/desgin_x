@@ -91,8 +91,9 @@ section::after {
 }
 #cont3 {
   width: 100%;
+  margin-top: 10%;
 }
-#cont4 {
+#cont5 {
   background: rgb(63, 63, 159);
 }
 .text_1 {
@@ -128,13 +129,14 @@ section::after {
   color: #ffffff;
 }
 #content .inner {
-  max-width: 500px;
-  position: absolute;
+  /*position: absolute;
   top: 135%;
-  left: 25%;
+  left: 25%;*/
 }
 #content .inner img {
-  width: 100%;
+  width: 73%;
+  margin-left: 25%;
+  margin-top: 15%;
 }
 .cube {
   position: fixed; /*수정*/
@@ -202,9 +204,7 @@ section::after {
 .social {
   position: absolute;
   top: 20px;
-  right: -5px;
-  width: 9%;
-  height: 40px;
+  right: 0;
   z-index: 999999;
 }
 .sns {
@@ -593,6 +593,9 @@ a:focus {
 }
 /* *********************************************************************** */
 /* 첫번쨰 bx슬라이더 영역 */
+#cont1 {
+  margin-bottom: 100px;
+}
 #content {
   width: 100%;
   margin: 0 auto;
@@ -847,11 +850,11 @@ ul.bxslider {
 #conten {
   width: 100%;
   margin: 0 auto;
-  margin-top: 8%;
+  margin-bottom: 100px;
 }
 .bxslide > div > img {
-  width: 30%;
-  margin-left: 52%;
+  width: calc(70% - 110px);
+  margin-left: calc(110px + 7%);
 } /*수정*/
 
 /** VARIABLES
@@ -1025,8 +1028,9 @@ ul.bxslide {
   display: block;
   width: 60px;
   height: 60px;
+  margin-left: 79%;
   position: absolute;
-  top: calc(50% - 400px);
+  top: 60px;
   text-indent: -999999px;
   opacity: 60%;
 }
@@ -1198,11 +1202,7 @@ ul.bxslide {
 }
 .inline {
   text-align: center;
-  width: 500px;
-  height: 500px;
   position: relative;
-  top: 300px;
-  left: 0;
 }
 .box_a {
   float: left;
@@ -1212,6 +1212,15 @@ ul.bxslide {
 }
 /* 마지막 슬릭슬라이더 영역끝 */
 /* *********************************************************************** */
+#cont3,
+#cont4 {
+  margin-bottom: 100px;
+}
+#cont4:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 /* 투썸플레이스 썸네일 */
 .twosomeplace_picture img {
   float: right;
@@ -1224,9 +1233,17 @@ ul.bxslide {
   margin-left: 16%;
   margin-top: 10%;
 }
+.plus_button {
+  float: left;
+  margin-left: 26%;
+}
 /* 투썸플레이스 썸네일 끝 */
 /* 커피목업 */
-#cont3_5 {
-  margin-top: 35%;
+
+.zeropercent img {
+  width: 100%;
+}
+.purple_bear img {
+  width: 100%;
 }
 /* 커피목업 */
